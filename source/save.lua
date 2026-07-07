@@ -16,7 +16,6 @@ function Save.load()
 end
 
 function Save.store()
-    G.save.hearts = G.hearts
     playdate.datastore.write(G.save, "save")
     Harness.count("saves")
 end

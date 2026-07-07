@@ -324,6 +324,7 @@ RoomDefs = {
         exits = { U = "R2", D = "A1" },
         vent = { 12, 14 },
         gap = { 18, 20 },
+        anemone = 8,
         spawns = { { t = "jelly", x = 300, y = 90 } },
         grid = {
             ".........................",
@@ -406,6 +407,7 @@ RoomDefs = {
         exits = { U = "S2", L = "S5" },
         exitNeeds = { L = "anchor" },
         vent = { 10, 12 },
+        anemone = 8,
         spawns = { { t = "barn", x = 300 } },
         grid = {
             ".........................",
@@ -446,6 +448,7 @@ RoomDefs = {
         exits = { U = "R5", R = "A2", D = "A4" },
         vent = { 18, 20 },
         gap = { 5, 7 },
+        anemone = 12,
         dark = true,
         crush = 35,
         spawns = { { t = "ghost", x = 200, y = 100 } },
@@ -536,6 +539,7 @@ RoomDefs = {
     M1 = {
         name = "SUNKEN TEMPLE", zone = "M", mapPos = { 6, 6 },
         exits = { L = "A3", R = "M2" },
+        anemone = 8,
         grid = {
             ".........................",
             "..#..................#...",
