@@ -35,7 +35,6 @@ function Enemies.reset()
             e.fireT = 2.5
         elseif s.t == "eel" then
             e.out = 0
-            e.outT = 1.2
             e.holds = false
         elseif s.t == "ghost" then
             e.dashT = 2
@@ -87,7 +86,6 @@ local function eelSpit(e)
     p.vy = -spd * 0.87
     e.holds = false
     e.out = 0
-    e.outT = 3
     Fx.burst(p.x, p.y, 6)
     Sfx.serve()
     Harness.count("eelSpits")
@@ -180,7 +178,6 @@ function Enemies.update(dt)
                     if e.holdT <= 0 then eelSpit(e) end
                 else
                     e.holdT = 6
-                    e.outT = e.outT - dt
                     local want = (math.floor(e.ph / 2.2) % 2 == 0) and 1 or 0
                     e.out = Util.clamp(e.out + (want * 2 - 1) * 2 * dt, 0, 1)
                 end

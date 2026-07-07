@@ -1,6 +1,6 @@
 -- Floor items: shell shards (drop from * coral, fall, crab collects;
--- 4 shards = +1 max heart) and molt shrines (touch to molt — placeholder
--- for the M5 bosses).
+-- 4 shards = +1 max heart) and molt shrines (appear once the room's
+-- boss has yielded; touch to molt).
 
 Items = {}
 

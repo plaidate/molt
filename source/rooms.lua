@@ -1,6 +1,7 @@
 -- Rooms: loading, exits/transitions, anemone rests, clear detection.
--- Field blocks reset on every entry (by design); persistent gate blocks
--- arrive in M3. Clearing a pool is a fanfare, not a freeze.
+-- Field blocks reset on every entry (by design); gate blocks (kelp,
+-- stone, glyph, key) stay broken forever via G.save.gates. Clearing a
+-- pool is a fanfare, not a freeze.
 
 Rooms = {}
 
@@ -123,7 +124,7 @@ function Rooms.anemoneCheck()
     local ax = (def.anemone - 1) * C.CELL + 8
     if math.abs(G.crab.x - ax) < C.ANEMONE_R then
         G.rested = true
-        G.hearts = C.HEARTS
+        G.hearts = G.maxHearts
         G.save.anemone = G.room
         Save.store()
         Fx.burst(ax, 218, 10)

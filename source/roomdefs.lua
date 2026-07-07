@@ -3,9 +3,9 @@
 --   S stone (Heavy Pearl), k kelp curtain (Pincer Snap; blocks crab),
 --   g glyph (needs 3 keys; blocks crab), ! temple key.
 -- exits L/R walk-off, U vent={c1,c2}, D gap={c1,c2}; exitNeeds gates a
--- direction on a molt; anemone = rest col; shrine = molt pickup (M5:
--- bosses); dark = lantern territory; toast = entry line.
--- All rows exactly 25 chars x 12 (validated at load + tools/gridcheck).
+-- direction on a molt; anemone = rest col; shrine = molt pickup (appears
+-- after the room's boss); dark = lantern territory; toast = entry line.
+-- All rows exactly 25 chars x 12 (validated at load).
 
 RoomDefs = {
     -- ---- TIDEPOOLS ------------------------------------------------------
@@ -563,8 +563,7 @@ RoomDefs = {
             "......ccc.......ccc......",
             ".........................",
             ".........................",
-            "...........BBB..........."
-            ,
+            "...........BBB...........",
             ".........................",
             ".........................",
             ".........................",

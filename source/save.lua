@@ -1,5 +1,6 @@
--- Persistence: last rest anemone + visited rooms, written to the "save"
--- datastore whenever the crab rests. Gates/molts/shards join in M3.
+-- Persistence to the "save" datastore: last rest anemone, visited rooms,
+-- molts, defeated bosses, broken gate cells, temple keys, shards, and
+-- max hearts. Written at anemone rests, molts, and gate/key events.
 
 Save = {}
 

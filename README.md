@@ -9,6 +9,16 @@ molt abilities, seven bosses, a Kraken finale. All 1-bit, all synth.*
 
 ![the Kraken](screenshot.png)
 
+New to the deep? Read the **[player's manual](MANUAL.md)**.
+
+## Play it
+
+Grab a prebuilt `Molt.pdx.zip` from the [Releases](../../releases) page
+(or the `dist/` folder), then sideload it at
+<https://play.date/account/sideload/> — or unzip it and open the `.pdx`
+in the Playdate Simulator. To build from source instead, see
+[Development](#development).
+
 ## Controls
 
 | Input | Action |

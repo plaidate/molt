@@ -1,5 +1,5 @@
--- MOLT - an arkanoidvania for Playdate. M3: molts & gates.
--- Six zones, 28 rooms. Molt shrines grant abilities (bosses in M5):
+-- MOLT - an arkanoidvania for Playdate.
+-- Six zones, 28 rooms, seven bosses. Each boss yields a molt shrine:
 -- Pincer Snap cuts kelp and super-shots the pearl, Sticky Claw catches,
 -- Heavy Pearl shatters stone, the Lantern Snail lights the Abyss, Anchor
 -- Legs defy the deep currents. Three temple keys unlock the glyph door.
@@ -64,7 +64,7 @@ function Game.molt(name)
     Harness.count("molts")
 end
 
-local function snap(inp)
+local function snap()
     local cb = G.crab
     if cb.snapT > 0.05 or not G.save.molts.pincer then return end
     cb.snapT = 0.25
@@ -125,7 +125,7 @@ local function tick()
             Draw.transition()
         else
             if (inp.serve and not G.pearl.held) or inp.snapReq then
-                snap(inp)
+                snap()
             end
             Enemies.update(dt)
             Bosses.update(dt)
