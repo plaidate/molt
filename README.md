@@ -1,5 +1,7 @@
 # MOLT
 
+> Part of **[plAIdate](https://plaidate.github.io)** — AI-built 1-bit games, ports, and engines for the Playdate.
+
 An arkanoidvania for Playdate. You are a crab; your carapace is the
 paddle. Bounce a pearl to smash coral across a connected undersea world,
 molt new shells to open the way, and face the myths of the deep.
