@@ -1,4 +1,4 @@
-# MOLT
+# Molt
 
 > Part of **[plAIdate](https://plaidate.github.io)** — AI-built 1-bit games, ports, and engines for the Playdate.
 

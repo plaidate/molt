@@ -1,4 +1,4 @@
-# MOLT — Player's Manual
+# Molt — Player's Manual
 
 *An arkanoidvania: you are the crab, your carapace is the paddle.*
 

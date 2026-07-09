@@ -1,4 +1,4 @@
-# MOLT — itch.io page copy
+# Molt — itch.io page copy
 
 ## Tagline
 
@@ -6,7 +6,7 @@ You are the crab. Your carapace is the paddle. An arkanoidvania for Playdate.
 
 ## Description
 
-MOLT is a breakout game shaped like a Metroidvania. You are a small crab
+Molt is a breakout game shaped like a Metroidvania. You are a small crab
 on the sea bed, bouncing a pearl off your own carapace to smash coral,
 kelp, stone and shipwreck across 28 connected rooms in six zones. Where
 the pearl lands on your shell sets its flight; the crank adds aim and

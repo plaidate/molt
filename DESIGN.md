@@ -1,4 +1,4 @@
-# MOLT — an arkanoidvania
+# Molt — an arkanoidvania
 
 *Design doc, written 2026-07-05, before any code (Bin Night convention).*
 
@@ -265,7 +265,7 @@ drop-marked), plus `exits={L=,R=,U=,D=}`, `spawn list`, `current`,
 
 ## Open decisions (defaults chosen, flag to change)
 
-1. **Title**: *MOLT* (alt: *Carapace*, *Pinch & Pearl*, *Scuttlevania*).
+1. **Title**: *Molt* (alt: *Carapace*, *Pinch & Pearl*, *Scuttlevania*).
 2. **Miss penalty**: 1 heart per drop (default) vs Kharzoid-style lives.
 3. **Scope**: 26 rooms/6 zones (default) vs trimmed 16 rooms/4 zones
    (fold Reef into Kelp, Abyss into Temple) if build time matters.
