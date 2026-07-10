@@ -1,6 +1,7 @@
 name=Molt
-author=sdwfrost
+author=Simon Frost
 description=An arkanoidvania. You are a crab; your carapace is the paddle. Bounce a pearl through a connected undersea world, molt new shells to open the way, and face the myths of the deep.
 bundleID=com.sdwfrost.molt
 version=0.1
-buildNumber=1
+buildNumber=2
+imagePath=launcher
