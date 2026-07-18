@@ -5,6 +5,7 @@
 -- Legs defy the deep currents. Three temple keys unlock the glyph door.
 
 import "CoreLibs/graphics"
+import "CoreLibs/ui"
 
 import "config"
 import "util"

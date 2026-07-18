@@ -19,6 +19,13 @@ C = {
     CRAB_SPD = 175,
     BURROW_SPD = 5,     -- burrow ease in/out per second
 
+    -- crank-as-paddle (modal: crank scuttles the crab while the pearl flies,
+    -- aims while it is held). mvx from crank = crankChange summed over 5
+    -- frames / CRANK_MOVE, so a brisk crank out-scuttles the d-pad.
+    CRANK_MOVE = 60,       -- summed crank degrees per unit of scuttle
+    CRANK_MVX_MAX = 2.4,   -- crank tops out at 2.4x d-pad speed
+    CRANK_DEADZONE = 0.12, -- ignore crank drift below this scuttle fraction
+
     PEARL_R = 3,
     PEARL_SPD = 150,    -- zone 1 pace
     BOUNCE_MAX = 65,    -- max exit tilt (deg from vertical) off the carapace

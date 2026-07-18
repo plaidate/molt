@@ -34,7 +34,8 @@ function Crab.update(dt, inp)
     if inp.mvx ~= 0 and cb.burrow < 0.5 then
         local nx = Util.clamp(cb.x + inp.mvx * C.CRAB_SPD * dt, C.CRAB_HW, C.W - C.CRAB_HW)
         -- kelp curtains and glyph walls block the crab at the leading edge
-        if not Blocks.crabBlockedAt(nx + inp.mvx * C.CRAB_HW) then
+        -- (sign, not mvx: crank scuttle can exceed 1 and must not overshoot)
+        if not Blocks.crabBlockedAt(nx + Util.sign(inp.mvx) * C.CRAB_HW) then
             cb.x = nx
         end
         cb.walkPhase = cb.walkPhase + dt * 14

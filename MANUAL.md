@@ -14,14 +14,16 @@ water no crab has scuttled before.
 
 | Input | Action |
 | --- | --- |
-| d-pad ← / → | scuttle along the sand (walk off an edge to leave the room) |
+| **Crank** (pearl in flight) | **scuttle the crab — the crank is your paddle** |
+| Crank (pearl held) | aim the serve, 1:1 (the dotted aim line) |
+| Crank (sweep at contact) | english — the same sweep bends the bounce up to 20° |
+| d-pad ← / → | scuttle too; overrides the crank when pressed (and the docked control) |
 | d-pad ↑ | ride a bubble vent up through the ceiling |
 | d-pad ↓ | burrow into the sand — dodge shots, or sink through a floor gap |
 | A | serve the pearl (while held) / **Pincer Snap** (while it flies) |
 | B (hold) | **Sticky Claw** catch — the pearl sticks to your claw |
 | B (tap) | world map |
-| Crank | aim the serve; crank *during* a bounce for up to 20° of english |
-| Crank docked | fixed 45° serves toward mid-screen — fully playable docked |
+| Crank docked | d-pad steers; fixed 45° serves toward mid-screen — fully playable docked |
 
 The system menu also has a **world map** item and a **music** toggle.
 
@@ -122,10 +124,11 @@ does. Most die to one pearl hit and return when you re-enter the room.
 
 ## Tips
 
-1. **Aim with your shell, not just the crank.** Position so the pearl
+1. **Aim with your shell, not just the angle.** Position so the pearl
    lands off-centre toward your target — rim hits sweep almost sideways.
-2. **English is free.** A quick crank flick as the pearl touches down
-   bends the shot up to 20° without moving an inch.
+2. **Steering and spin are one motion.** The crank scuttles you while the
+   pearl flies, so a brisk crank as it touches down both slides your shell
+   under it *and* bends the bounce up to 20° — sweep into the shot.
 3. **Burrowing is a parry.** Pellets, urchins, jousts and tentacle
    sweeps all miss a buried crab — and you can deliberately let the
    pearl pass overhead when a bounce would be worse than a catch-up.

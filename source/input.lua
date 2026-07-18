@@ -1,7 +1,9 @@
 -- Real input + the smoke autopilot.
 -- Real: d-pad scuttles/burrows/rides vents, A serves (pearl held) or
 -- Pincer Snaps (pearl loose), B hold = Sticky Claw catch, B tap = world
--- map, crank aims + english. Docked crank = fixed 45-degree serves.
+-- map. Modal crank: while the pearl is HELD the crank aims the serve
+-- (1:1); while it FLIES the crank scuttles the crab (the same sweep also
+-- adds english on the bounce). Docked crank = d-pad only, fixed serve.
 -- Autopilot: one scripted expedition — every molt in order, every gate
 -- exercised (incl. refusals), all 3 keys, AND every creature verified:
 -- jelly/sprat/puffer/starfish-repair/urchin-stun/keg-chain/pellet-stun/
@@ -38,11 +40,20 @@ function Input.gather()
     eng[ei] = playdate.getCrankChange()
     local sum = 0
     for _, v in ipairs(eng) do sum = sum + v end
+    -- modal crank: aims while the pearl is held (1:1), scuttles the crab
+    -- while it flies (and the same sweep bends the bounce). Docked = d-pad
+    -- only, fixed serve.
     if playdate.isCrankDocked() then
         inp.aim = G.crab.x < C.W / 2 and 45 or -45
-    else
+    elseif G.pearl and G.pearl.held then
         local pos = playdate.getCrankPosition()
         inp.aim = Util.clamp(((pos + 180) % 360) - 180, -C.SERVE_CAP, C.SERVE_CAP)
+    else
+        if inp.mvx == 0 then          -- a pressed d-pad overrides the crank
+            local m = sum / C.CRANK_MOVE
+            if math.abs(m) < C.CRANK_DEADZONE then m = 0 end
+            inp.mvx = Util.clamp(m, -C.CRANK_MVX_MAX, C.CRANK_MVX_MAX)
+        end
         inp.english = Util.clamp(sum * 0.2, -C.ENGLISH_MAX, C.ENGLISH_MAX)
     end
     return inp

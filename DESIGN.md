@@ -36,17 +36,24 @@ gaps, sink through floor gaps. Room transitions are a quick slide.
 
 ## Controls
 
-- **d-pad ←/→**: scuttle. Crab is fast — this is the paddle.
+*Controls & feel pass, 2026-07-17: the crank is now the paddle. Modal —
+it scuttles the crab while the pearl flies and aims while it is held. The
+d-pad still scuttles as a fine control / docked fallback.*
+
+- **Crank** (primary): while the pearl **flies**, the crank scuttles the
+  crab — proportional to crank speed, up to ~2.4× the d-pad, with a small
+  deadzone. The same sweep at the moment of contact bends the exit angle
+  (english, up to ±20°) — a moving paddle imparts spin. While the pearl is
+  **held**, the crank instead sets the launch angle 1:1 (drawn as a dotted
+  aim line). Docked crank = d-pad only, fixed 45° serves, no english — the
+  game stays fully playable docked (a crank indicator nudges undocking).
+- **d-pad ←/→**: scuttle. Always available; overrides the crank when
+  pressed. Fine positioning and the docked control.
 - **d-pad ↓**: burrow into sand (dodge enemy shots; the pearl passes
   overhead — deliberate "let it through" play).
 - **A**: serve the pearl / **Pincer Snap** (after molt 1): a short melee
   snap that super-shots the ball if timed on contact, and cuts kelp.
 - **B**: catch (after molt 2, Sticky Claw) — pearl sticks to claw.
-- **Crank**: aim. While holding the pearl (serve or sticky-catch) the
-  crank sets launch angle, drawn as a dotted aim line. On a normal bounce,
-  cranking during contact applies english (bends the exit angle up to
-  ±20°). Docked crank = fixed 60° serves, no english — game stays fully
-  playable docked.
 - **Menu**: map screen (explored rooms grid), save-and-quit.
 
 Bounce rule: exit angle depends on where the pearl hits the carapace

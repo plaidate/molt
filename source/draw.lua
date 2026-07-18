@@ -254,6 +254,11 @@ function Draw.play()
         gfx.fillRect(0, 0, C.W, C.H)
         gfx.setColor(gfx.kColorWhite)
     end
+    -- docked play is fully d-pad-playable, but the crank now steers and
+    -- aims: nudge the player to undock. (never in headless smoke)
+    if not Harness.enabled and playdate.isCrankDocked() then
+        playdate.ui.crankIndicator:draw()
+    end
 end
 
 function Draw.transition()
@@ -335,8 +340,8 @@ function Draw.title()
     local hasSave = G.save.anemone ~= nil
     gfx.drawTextAligned(hasSave and "the tide remembers - Ⓐ continue" or "Ⓐ begin",
         C.W / 2, 136, kTextAlignment.center)
-    gfx.drawTextAligned("✛ scuttle + burrow   🎣 aim", C.W / 2, 162, kTextAlignment.center)
-    gfx.drawTextAligned("Ⓐ serve / snap   Ⓑ catch / map", C.W / 2, 180, kTextAlignment.center)
+    gfx.drawTextAligned("🎣 or ✛ scuttle   🎣 aim + english", C.W / 2, 162, kTextAlignment.center)
+    gfx.drawTextAligned("Ⓐ serve / snap   Ⓑ catch / map   ✛↓ burrow", C.W / 2, 180, kTextAlignment.center)
     gfx.setImageDrawMode(gfx.kDrawModeCopy)
     gfx.fillCircleAtPoint(C.W / 2, 30 + math.sin(G.t * 3) * 4, C.PEARL_R + 1)
 end
